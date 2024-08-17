@@ -1,0 +1,117 @@
+.main{
+    margin: auto;
+    height: 100vh;
+}
+
+header{
+    background-color: rgb(197, 190, 241);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    
+}
+
+
+
+label{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#form_temario{
+    background-color:rgb(241, 241, 231);
+    border: 2px solid black;
+    width: 60%;
+    margin: auto;
+}
+
+
+    .valores_general{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+        .numer{
+            width: 50%;
+        }
+
+        .horario{
+            width: 50%;
+        }
+  
+        .instructor{
+            width: 60%;
+            margin: auto;
+        }
+
+    .radios_general{
+        width: 60%;
+        margin: auto;
+        display: flex;
+    }
+
+        #radio-nivel_curso{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #radio-modalidad{
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+
+.botones_form_temario{
+    width: 60%;
+    margin: auto;
+}
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media screen and (max-width: 768px) {
+    #form_temario {
+        width: 90%;
+        margin: auto;
+        padding: 15px;
+    }
+
+    .valores_general,
+    .radios_general {
+        flex-direction: column;
+    }
+
+    .numer,
+    .horario,
+    #radio-nivel_curso,
+    #radio-modalidad {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* .botones_form_temario {
+        flex-direction: column;
+    } */
+
+    .btn_borrar,
+    .btn_crear {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    body {
+        padding-top: 70px; /* Aumentar el margen si el header es más alto en dispositivos pequeños */
+    }
+}
